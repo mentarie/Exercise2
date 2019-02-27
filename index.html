@@ -1,24 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+	<title>KALKULATOR MENTARI</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <input id="firstNum" type="number" placeholder="A">
-  <input id="secondNum" type="number" placeholder="B">
-  <br>
-  <button onclick="tambah()">Tambah</button>
-  <button onclick="kali()">Kali</button>
-  <button onclick="bagi()">bagi</button>
-  <button onclick="pangkat()">pangkat</button>
-  <br>
-  <p>
-    Hasilnya adalah :
-  </p>
-  <p id=hasil>
-    .....
-  </p>
+	<div id="papan"><!-- Main background -->
+
+        <div id="hasil"></div>
+             
+         <div id="main">
+             <div id="first-rows">
+	             <button class="del-bg" id="delete">Del</button>
+	             <button value="%" class="btn-style operator opera-bg fall-back">%</button>
+	             <button value="+" class="btn-style opera-bg value align operator">+</button>
+             </div>
+             
+          	 <div class="rows">
+	         	 <button value="7" class="btn-style num-bg num first-child">7</button>
+	             <button value="8" class="btn-style num-bg num">8</button>
+	             <button value="9" class="btn-style num-bg num">9</button>
+	             <button value="-" class="btn-style opera-bg operator">-</button>
+             </div>
+             
+             <div class="rows">
+	             <button value="4" class="btn-style num-bg num first-child">4</button>
+	             <button value="5" class="btn-style num-bg num">5</button>
+	             <button value="6" class="btn-style num-bg num">6</button>
+	             <button value="*" class="btn-style opera-bg operator">x</button>
+             </div>
+             
+             <div class="rows">
+	             <button value="1" class="btn-style num-bg num first-child">1</button>
+	             <button value="2" class="btn-style num-bg num">2</button>
+	             <button value="3" class="btn-style num-bg num">3</button>
+	             <button value="/" class="btn-style opera-bg operator">/</button>
+             </div>
+             
+             <div class="rows">
+	             <button value="0" class="num-bg zero" id="delete">0</button>
+	             <button value="." class="btn-style num-bg period fall-back">.</button>
+	             <button value="=" id="eqn-bg" class="eqn align">=</button>
+             </div>            
+         </div>   
+     </div>
+
+	<!-- AMBIL JS -->
+    <script src="script.js"></script>
 </body>
 </html>
